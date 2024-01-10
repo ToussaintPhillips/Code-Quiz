@@ -15,8 +15,23 @@ const questions = [
       question: "What will be logged? `console.log(5 + '5');`",
       options: ["10", "55", "5", "Error"],
       answer: "55"
-    }
-  ];
+    },
+    {
+      question: "How can you comment out multiple lines in JavaScript?",
+      options: ["//", "<!-- -->", "/* */", "**"],
+      answer: "/* */"
+    },
+    {
+      question: "What method would you use to add a new element at the end of an array?",
+      options: ["append()", "push()", "add()", "insert()"],
+      answer: "push()"
+    },
+    {
+      question: "Which function converts a JSON string to a JavaScript object?",
+      options: ["JSON.toObj()", "JSON.stringify()", "JSON.parse()", "JSON.object()"],
+      answer: "JSON.parse()"
+    },
+];
   
   
   
