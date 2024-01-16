@@ -6,16 +6,25 @@ function displayHighScores() {
   highScoresOl.innerHTML = ''; // Clear previous scores
   
   const scores = JSON.parse(localStorage.getItem('scores')) || [];
-  scores.forEach((scoreObj, index) => {
-    const liElement = document.createElement('li');
-    liElement.textContent = `${index + 1}. ${scoreObj.initials} - ${scoreObj.score}`;
-    highScoresOl.appendChild(liElement);
-  });
+
+  if (scores.length > 0) {
+    scores.forEach((scoreObj, index) => {
+      const liElement = document.createElement('li');
+      liElement.textContent = `${index + 1}. ${scoreObj.initials} - ${scoreObj.score}`;
+      highScoresOl.appendChild(liElement);
+    });
+  } else {
+    const messageElement = document.createElement('p');
+    messageElement.textContent = 'No high scores available.';
+    highScoresOl.appendChild(messageElement);
+  }
 }
 
 // Event listener for clearing high scores
 const clearButton = document.getElementById('clear');
-clearButton.addEventListener('click', clearHighScores);
+if (clearButton) {
+  clearButton.addEventListener('click', clearHighScores);
+}
 
 // Function to clear high scores
 function clearHighScores() {
