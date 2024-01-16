@@ -1,6 +1,6 @@
-# Code Quiz Challenge
+# Code Quiz 
 
-<h3 align="center">Code Quiz Challenge</h3>
+<h3 align="center">Code Quiz</h3>
 
 <p align="center">
   A coding quiz application designed to test and enhance your JavaScript fundamentals.
