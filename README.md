@@ -59,9 +59,9 @@
 ## Screenshots
 
 ![Screenshot1](Code-Quiz_Questions.png)
-![Screenshot2](Code-Quiz_All done!.png)
-![Screenshot3](Code-Quiz.png)
-![Screenshot4](Code-Quiz.png)
+![Screenshot2](Code-Quiz_All_done!.png)
+![Screenshot3](Code-Quiz_View_highscores.png)
+![Screenshot4](Code-Quiz_Highscores.png)
 
 
 
