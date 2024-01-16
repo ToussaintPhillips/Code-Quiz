@@ -1,6 +1,6 @@
 # Code Quiz 
 
-<h3 align="center">Code Quiz/h3>
+<h3 align="center">Code Quiz</h3>
 
 <p align="center">
   A coding quiz application to test your JavaScript fundamentals.
