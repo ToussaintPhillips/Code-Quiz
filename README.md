@@ -58,9 +58,11 @@
 
 ## Screenshots
 
-![Screenshot1](Code-Quiz-Highscores.png)
-![Screenshot2](Code-Quiz.png)
+![Screenshot1](Code-Quiz_Questions.png)
+![Screenshot2](Code-Quiz_All done!.png)
 ![Screenshot3](Code-Quiz.png)
+![Screenshot4](Code-Quiz.png)
+
 
 
 ## Technologies
