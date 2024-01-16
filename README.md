@@ -58,7 +58,10 @@
 
 ## Screenshots
 
-- Include screenshots of the application to showcase its appearance and functionality.
+![Project Screenshot](Code-QuizHighscores.png)
+![Project Screenshot](Code-Quiz.png)
+![Project Screenshot](Code-Quiz.png)
+
 
 ## Technologies
 
