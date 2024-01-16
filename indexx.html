@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>Coding Quiz</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <div id="start-screen">
-    <h1>Coding Quiz Challenge</h1>
-    <button id="start">Start Quiz</button>
+  <div class="scores">
+    <a href="#" id="view-scores">View High Scores</a>
   </div>
+  
+  <div class="timer">Time: <span id="time">60</span></div>
 
-  <div id="questions" class="hide">
-    <h2 id="question-title"></h2>
-    <div id="choices"></div>
-  </div>
+  <div class="wrapper">
+    <div id="start-screen" class="start">
+      <h1>Coding Quiz Challenge</h1>
+      <button id="start">Start Quiz</button>
+    </div>
 
-  <div id="end-screen" class="hide">
-    <h2>All done!</h2>
-    <p>Your final score is <span id="final-score"></span>.</p>
-    <p>Enter initials: <input type="text" id="initials" maxlength="3"><button id="submit">Submit</button></p>
-    <div id="feedback"></div>
-  </div>
+    <div id="questions" class="hide">
+      <h2 id="question-title"></h2>
+      <div id="choices" class="choices"></div>
+    </div>
 
-  <div id="high-scores" class="hide">
-    <h2>High Scores</h2>
-    <div id="high-scores-container"></div>
+    <div id="end-screen" class="hide">
+      <h2>All done!</h2>
+      <p>Your final score is <span id="final-score"></span>.</p>
+      <p>Enter initials: <input type="text" id="initials" maxlength="3"><button id="submit">Submit</button></p>
+      <div id="feedback" class="feedback"></div>
+    </div>
+
+    <div id="high-scores" class="hide">
+      <h2>High Scores</h2>
+      <div id="high-scores-container"></div>
+    </div>
   </div>
 
   <script src="questions.js"></script>
   <script src="logic.js"></script>
+  <script>
+    document.getElementById('view-scores').addEventListener('click', function() {
+      document.getElementById('high-scores').classList.toggle('hide');
+    });
+  </script>
 </body>
 </html>
+

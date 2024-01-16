@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="scores">
-    <a href="#" id="view-scores">View High Scores</a>
+    <a href="highscores.html" id="view-scores">View High Scores</a>
   </div>
   
   <div class="timer">Time: <span id="time">60</span></div>
@@ -38,5 +38,10 @@
 
   <script src="questions.js"></script>
   <script src="logic.js"></script>
+  <script>
+    document.getElementById('view-scores').addEventListener('click', function() {
+      window.location.href = 'highscores.html';
+    });
+  </script>
 </body>
 </html>
