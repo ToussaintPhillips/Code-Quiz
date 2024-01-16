@@ -1,34 +1,18 @@
-# Code Quiz 
+# Code Quiz Challenge
 
-<h3 align="center">Code Quiz</h3>
+<h3 align="center">Code Quiz Challenge</h3>
 
 <p align="center">
-  A coding quiz application to test your JavaScript fundamentals.
+  A coding quiz application designed to test and enhance your JavaScript fundamentals.
   <br />
   <a href="https://github.com/ToussaintPhillips/Code-Quiz"><strong>View on GitHub</strong></a>
-  <br />
-  <br />
-  <a href="https://ToussaintPhillips.github.io/Code-Quiz/">View Live Demo</a>
+  ·
+  <a href="https://toussaintphillips.github.io/Code-Quiz/">View Live Demo</a>
   ·
   <a href="https://github.com/ToussaintPhillips/Code-Quiz/issues">Report Bug</a>
   ·
-  <a href="https://github.com/To/Code-Quiz/issues">Request Feature</a>
+  <a href="https://github.com/ToussaintPhillips/Code-Quiz/issues">Request Feature</a>
 </p>
-</div>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#screenshots">Screenshots</a></li>
-    <li><a href="#technologies">Technologies</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
-</details>
 
 ## About The Project
 
@@ -36,19 +20,41 @@
 
 ### Features
 
-- **Timer Functionality**: The quiz is timed to add an element of challenge.
-- **Multiple-Choice Questions**: A set of JavaScript-related multiple-choice questions.
-- **Score Tracking**: Keep track of your score based on correct answers.
-- **High Scores**: Save and display high scores.
-- **Responsive Design**: Works well on various screen sizes.
+- **Timer Functionality**: A countdown timer adds an element of challenge, pushing you to answer questions swiftly.
+- **Multiple-Choice Questions**: Engage with a set of JavaScript-related multiple-choice questions, testing your knowledge.
+- **Score Tracking**: Track your progress with a dynamically updated score based on correct answers.
+- **High Scores**: Save and display your highest scores to compare your performance.
+- **Responsive Design**: Enjoy a seamless experience on various screen sizes.
 
 ## Usage
 
 1. **Clone the Repository**: Clone the 'Code-Quiz' repository to your local machine.
-2. **Open `index.html`**: Launch the `index.html` file in a web browser to start the quiz.
-3. **Answer Questions**: Click on the provided options to answer the multiple-choice questions.
-4. **End of Quiz**: The quiz ends when all questions are answered or the timer runs out.
-5. **Save High Score**: Enter your initials and click "Submit" to save your high score.
+    ```bash
+    git clone https://github.com/ToussaintPhillips/Code-Quiz.git
+    ```
+
+2. **Navigate to the Project Directory**:
+    ```bash
+    cd Code-Quiz
+    ```
+
+3. **Open `index.html` in a Web Browser**: Launch the `index.html` file in your preferred web browser to start the quiz.
+
+4. **Answer Questions**: Click on the provided options to answer the multiple-choice questions.
+
+5. **Quiz End and Scoring**:
+   - The quiz ends when you've answered all questions or when the timer reaches zero.
+   - Your final score is calculated based on the number of correct answers and the time remaining.
+
+6. **Save High Score**:
+   - After completing the quiz, enter your initials in the input field provided.
+   - Click the "Submit" button to save your high score.
+
+7. **View High Scores**:
+   - Click on the "View High Scores" link to see a list of the highest scores achieved by various users.
+
+8. **Repeat and Improve**:
+   - Feel free to take the quiz multiple times to improve your score and challenge your JavaScript knowledge.
 
 ## Screenshots
 
