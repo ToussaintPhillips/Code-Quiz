@@ -1,18 +1,13 @@
 # Code Quiz 
 
-<h3 align="center">Code Quiz</h3>
+## Code Quiz
 
-<p align="center">
-  A coding quiz application designed to test and enhance your JavaScript fundamentals.
-  <br />
-  <a href="https://github.com/ToussaintPhillips/Code-Quiz"><strong>View on GitHub</strong></a>
-  ·
-  <a href="https://toussaintphillips.github.io/Code-Quiz/">View Live Demo</a>
-  ·
-  <a href="https://github.com/ToussaintPhillips/Code-Quiz/issues">Report Bug</a>
-  ·
-  <a href="https://github.com/ToussaintPhillips/Code-Quiz/issues">Request Feature</a>
-</p>
+A coding quiz application designed to test and enhance your JavaScript fundamentals.
+
+- [View on GitHub](https://github.com/ToussaintPhillips/Code-Quiz)
+- [View Live Demo](https://toussaintphillips.github.io/Code-Quiz/)
+- [Report Bug](https://github.com/ToussaintPhillips/Code-Quiz/issues)
+- [Request Feature](https://github.com/ToussaintPhillips/Code-Quiz/issues)
 
 ## About The Project
 
@@ -28,7 +23,7 @@
 
 ## Usage
 
-1. **Clone the Repository**: Clone the 'Code-Quiz' repository to your local machine.
+1. **Clone the Repository**:
     ```bash
     git clone https://github.com/ToussaintPhillips/Code-Quiz.git
     ```
@@ -63,8 +58,6 @@
 ![Screenshot3](Code-Quiz_View_highscores.png)
 ![Screenshot4](Code-Quiz_Highscores.png)
 
-
-
 ## Technologies
 
 - HTML
@@ -75,7 +68,17 @@
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please create a new issue or submit a pull request.
 
+## Contact
+
+For any inquiries or feedback, feel free to contact us:
+
+- [Email](toussaintphillips@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/toussaint-phillips/)
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more details.
+```
+
+
 
