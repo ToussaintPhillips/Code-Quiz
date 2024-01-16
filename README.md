@@ -16,7 +16,7 @@
 
 ## About The Project
 
-![Code-Quiz images/Code-Quiz.png]
+Code-Quiz images/Code-Quiz.png
 
 ### Features
 
