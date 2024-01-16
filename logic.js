@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let score = 0;
   let timeLeft = 60;
 
+  const correctSound = new Audio('assets/sfx/correct.wav'); 
+  const wrongSound = new Audio('assets/sfx/incorrect.wav'); 
+
   startButton.addEventListener('click', startQuiz);
 
   function startQuiz() {
@@ -47,9 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (selectedAnswer === correctAnswer) {
       score += 10;
       feedbackDiv.textContent = 'Correct!';
+      correctSound.play();
     } else {
       timeLeft -= 10;
       feedbackDiv.textContent = 'Wrong!';
+      wrongSound.play();
     }
 
     currentQuestionIndex++;
@@ -98,3 +103,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
