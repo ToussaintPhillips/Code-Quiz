@@ -3,6 +3,7 @@
 
 // Get DOM elements
 const startButton = document.getElementById('start');
+const viewScoresLink = document.getElementById('view-scores');
 const questionsDiv = document.getElementById('questions');
 const questionTitle = document.getElementById('question-title');
 const choicesDiv = document.getElementById('choices');
@@ -12,18 +13,24 @@ const initialsInput = document.getElementById('initials');
 const submitButton = document.getElementById('submit');
 const feedbackDiv = document.getElementById('feedback');
 const highScoresDiv = document.getElementById('high-scores-container');
+const timeSpan = document.getElementById('time');
 
 // Initialize variables
 let currentQuestionIndex = 0;
 let score = 0;
+let timeLeft = 60;
 
 // Event listener for starting the quiz
 startButton.addEventListener('click', startQuiz);
+
+// Event listener for viewing high scores
+viewScoresLink.addEventListener('click', viewHighScores);
 
 function startQuiz() {
   startButton.style.display = 'none';
   questionsDiv.classList.remove('hide');
   displayQuestion();
+  startTimer();
 }
 
 function displayQuestion() {
@@ -50,11 +57,23 @@ function checkAnswer(event) {
     score += 10;
     feedbackDiv.textContent = 'Correct!';
   } else {
+    timeLeft -= 10;
     feedbackDiv.textContent = 'Wrong!';
   }
 
   currentQuestionIndex++;
   displayQuestion();
+}
+
+function startTimer() {
+  const timerInterval = setInterval(() => {
+    timeLeft--;
+    timeSpan.textContent = timeLeft;
+    if (timeLeft <= 0 || currentQuestionIndex >= questions.length) {
+      clearInterval(timerInterval);
+      endQuiz();
+    }
+  }, 1000);
 }
 
 function endQuiz() {
@@ -88,4 +107,12 @@ function displayHighScores() {
     scoreElement.textContent = `${index + 1}. ${scoreObj.initials} - ${scoreObj.score}`;
     highScoresDiv.appendChild(scoreElement);
   });
+}
+
+// Function to view high scores
+function viewHighScores() {
+  questionsDiv.classList.add('hide');
+  endScreen.classList.add('hide');
+  highScoresDiv.classList.remove('hide');
+  viewScoresLink.style.display = 'none';
 }
